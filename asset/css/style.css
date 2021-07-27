@@ -48,11 +48,7 @@ nav>ul a {
 }
 
 nav>#nav-bt:checked~.ul-all {
-    display: block !important;
-}
-
-nav>ul>li:hover {
-    cursor: pointer;
+    left: 0%;
 }
 
 nav>ul>li>ul {
@@ -64,7 +60,7 @@ nav>ul>li>ul {
 }
 
 nav>ul>li {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 nav>ul>li>ul>li>a {
@@ -422,6 +418,31 @@ p {
 /* testimonals end */
 
 @media screen and (max-width: 995px) {
+    .nav-btnn {
+        position: absolute;
+        top: -40px;
+        right: 75px;
+    }
+    .ul-all {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 100%;
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        transition: 1s ease;
+    }
+    nav>ul>li {
+        padding-bottom: 30px;
+    }
+    .nav-2-cross {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        color: red;
+        font-size: 22px;
+    }
     header {
         height: 1650px;
     }
@@ -467,6 +488,9 @@ p {
 @media screen and (max-width: 575px) {
     header {
         height: 2650px;
+    }
+    .nav-btnn {
+        right: 40px;
     }
     .slick-next {
         right: -10px !important;
@@ -603,6 +627,10 @@ p {
 }
 
 @keyframes hover-an {
-    0% {background-position: bottom;}
-    100% {background-position: top;}
+    0% {
+        background-position: bottom;
+    }
+    100% {
+        background-position: top;
+    }
 }
